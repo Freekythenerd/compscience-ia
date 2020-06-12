@@ -1,4 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
-linked to signup
+If you're seeing this then signup functions page is linked
 </html>

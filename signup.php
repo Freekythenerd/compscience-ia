@@ -16,7 +16,18 @@
     <?php include "header.php"; ?>
 
     <main class="container lead">
-    <h1>sign up</h1>
+    <form action="signup.php" method="post">
+        <fieldset>
+            <legend>Signup form</legend>
+            <label for="username">username:  </label>
+            <input type="text" name="username" id="username" />
+            <br />
+            <label for="password">password:  </label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <input type="submit" value="Create Account" class="btn btn-primary" /> 
+        </fieldset>
+    </form>
 
     <?php include "signup_functions.php" ?>
     </main>
