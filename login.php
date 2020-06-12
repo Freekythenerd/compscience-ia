@@ -7,18 +7,19 @@
     <body>
     <?php include "header.php" ?>
     <?php include "login_functions.php" ?>
-    <h1>Login form</h1>
     <form action="login.php" method="post">
         <fieldset>
             <legend>login form</legend>
-            <label for="username">username: </label>
+            <label for="username">username:  </label>
             <input type="text" name="username" id="username" />
             <br />
-            <label for="password">password: </label>
+            <label for="password">password:  </label>
             <input type="password" name="password" id="password" />
             <br />
             <input type="submit" value="login" class="btn btn-primary" /> 
         </fieldset>
     </form>
+    <br />
+    <input type="button" value="Sign Up" onclick="location='signup.php'" class="btn btn-primary" />
 </body>
 </html>
