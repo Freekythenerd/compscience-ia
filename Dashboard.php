@@ -6,13 +6,7 @@
     </head>
 <body>
 <?php include "header.php"; ?>
-<?php
-    session_start();
-    if (!isset($_SESSION["name"]))
-        header("Location: login.php");
-?>
-<?php
-echo "You are now signed in as $profilename";
-?>
+
+<?php include "dashboard_functions.php" ?>
 </body>
 </html>

@@ -6,6 +6,7 @@
     </head>
 <body>
 <?php include "header.php"; ?>
+<?php include "index_functions.php" ?>
 <p>hello world</p>
 </body>
 </html>
