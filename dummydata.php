@@ -1,6 +1,6 @@
 <?php
 
-$names = [
+$tnames = [
     "dan",
     "james",
     "jeremy",
@@ -16,6 +16,26 @@ $names = [
     "isabella",
     "gareth",
     "will"
+];
+$snames = [
+        "Adams",
+        "Baker",
+        "Clark",
+        "Davis",
+        "Evans",
+        "Frank",
+        "Ghosh",
+        "Hills",
+        "Irwin",
+        "Jones",
+        "Klein",
+        "Lopez",
+        "Mason",
+        "Nalty",
+        "Ochoa",
+        "Patel",
+        "Quinn",
+        "Reily",
 ];
 
 $usernames = [
