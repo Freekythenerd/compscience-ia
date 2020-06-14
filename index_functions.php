@@ -4,7 +4,7 @@
     function Process() {
       include "dbconnect.php";
       
-              // check if friends table exists
+              // check if students table exists
               $query = "SELECT * FROM students";
               if(!$conn->query($query))
               {
@@ -33,9 +33,9 @@
                   if ($conn->query($query))
                   {
                       echo "<p>Teachers table created successfully</p>";
-                      for ($i = 0; $i < 10; $i++)
+                      for ($i = 0; $i < 10; $i++) //Inserting data in each row of the table
                   {
-                  $name = $names[rand(0, count($names) - 1)];
+                  $name = $tnames[rand(0, count($tnames) - 1)];
                   $username = $usernames[$i];
                   $password = $name;
                   $query = "INSERT INTO teachers (username, name, password) ";
