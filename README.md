@@ -8,6 +8,7 @@ How to start database:
     Click on user accounts
     Create a user account with all privilages 
     Set the username and password on dbconnect.php to the user account you just created
+    run index.php to create tables
     
     
     
