@@ -1,6 +1,7 @@
 compscience-ia
 
 How to start database:
+
     Run XAMPP
     Start Apache and MySQL
     Click Admin on MySQL which will bring you to phpmyadmin
