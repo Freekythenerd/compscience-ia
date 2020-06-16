@@ -1,16 +1,16 @@
 <?php
 
-function deletestudent($id){
+function deleteclass($id){
     include "dbconnect.php";
-    $query = "DELETE FROM students WHERE id= ".$id;
-    $res = $conn->query($query); 
+    $query = "DELETE FROM class WHERE id= ".$id;
+    $res = $conn->query($query);
 }
 
 
-function displaystudenttable($id) {
+function displayclasstable($id) {
 
 include "dbconnect.php";
-$query = "SELECT * FROM students ORDER BY name DESC";
+$query = "SELECT * FROM classes ORDER BY name DESC";
 //echo $query;
 $data = $conn->query($query);
 
@@ -30,7 +30,7 @@ foreach($data as $key => $var) {
     else{     
     $output .= '<td>' . ' <input type="submit" name="update'.$id.'" value="update" class="btn btn-primary" /> ' . '</td>';     
         
-    $output .= '<td>' . ' <input type="button" onclick="studentmaintenancefunctions.asp" name="delete'.$id.'" value="delete" class="btn btn-primary" /> ' . '</td>';
+    $output .= '<td>' . ' <input type="button" onclick="classmaintenancefunctions.asp" name="delete'.$id.'" value="delete" class="btn btn-primary" /> ' . '</td>';
     }
     $output .= '</tr>';
 }

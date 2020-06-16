@@ -21,15 +21,23 @@
     
             if ($error != "") // failed to login
             {
-                echo "<p>$error</p>";
+                print "<p>$error</p>";
             }
             else // successful login
             {
+                session_start();
                 $row = $res->fetch_assoc();
                 $_SESSION["id"] = $row["id"];
-                echo "login successful";
-                header("Location: dashboard.php");
-                // navigate to another page now
+                $_SESSION["name"] = $row["name"];
+               //print "<p>login successful, Name".$_SESSION["name"]."  Teacher ID".$_SESSION["id"]. "</p>";
+               header("Location: dashboard.php"); // navigate to another page now
             }
         }
+
+       function logout(){
+            session_start();
+            session_unset();
+            session_destroy();
+        }   
+ 
 ?>

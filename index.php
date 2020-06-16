@@ -7,6 +7,12 @@
 <body>
 <?php include "header.php"; ?>
 <?php include "index_functions.php" ?>
-<p>hello world</p>
+
+<?php
+    if (isset($_SESSION["id"])) { // check if user is logged in
+        echo "<p>you are logged in ";}
+    else {
+        echo "<p>please login</p>";}
+?>
 </body>
 </html>

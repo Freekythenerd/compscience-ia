@@ -8,22 +8,20 @@
 <title>yoooooooo</title>
 <head>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    
     </head>
 <body>
 <?php include "header.php"; ?>
-<?php include "studentmaintenance_functions.php"; ?>
+<?php include "classmaintenance_functions.php"; ?>
     
 <br>
-<h1>Student Maintenance</h1>
+<h1>Class Maintenance</h1>
 <br>
+    
+<?php displayclasstable("id"); ?>
 
-    
-<?php displaystudenttable("id"); ?>
-    
 <br>
 <br>
- <input type="button" value="Add Student" onclick="location='addstudent.php'" class="btn btn-primary" />    
+ <input type="button" value="Add Class" onclick="location='addclass.php'" class="btn btn-primary" />    
 
 </body>
 </html>

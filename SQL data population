@@ -1,0 +1,23 @@
+
+
+DELETE FROM classes;
+INSERT INTO classes (name, teacher_id) VALUES ("Physics", 1);
+INSERT INTO classes (name, teacher_id) VALUES ("Chemistry", 2);
+INSERT INTO classes (name, teacher_id) VALUES ("English", 3);
+INSERT INTO classes (name, teacher_id) VALUES ("Maths", 4);
+INSERT INTO classes (name, teacher_id) VALUES ("German", 5);
+SELECT * FROM classes;
+
+DELETE FROM students;
+INSERT INTO students (name,age) VALUES ("Simon", 19);
+INSERT INTO students (name,age) VALUES ("Luke", 20);
+SELECT * FROM students;
+
+DELETE FROM grades;
+INSERT INTO grades (student_id, class_id, grade) VALUES (1,1,"A");
+INSERT INTO grades (student_id, class_id, grade) VALUES (1,2,"C");
+INSERT INTO grades (student_id, class_id, grade) VALUES (1,4,"C");
+INSERT INTO grades (student_id, class_id, grade) VALUES (2,1,"D");
+INSERT INTO grades (student_id, class_id, grade) VALUES (2,5,"C");
+INSERT INTO grades (student_id, class_id, grade) VALUES (2,4,"C");
+SELECT * FROM grades;

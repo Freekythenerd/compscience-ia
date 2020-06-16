@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,30 +9,26 @@
     <link rel="stylesheet" href="forms.css" />
     <link rel="stylesheet" href="main.css" />
 
-    <title>gang</title>
+    <title>addclass</title>
 </head>
 <body>
     <?php include "header.php"; ?>
-  
 
     <main class="container lead">
-    <form action="signup.php" method="post">
+    <form action="addclass.php" method="post">
         <fieldset>
-            <legend>Signup form</legend>
-            <label for="username">username:  </label>
-            <input type="text" name="username" id="username" />
-            <br />
+            <legend>Add Class</legend>
              <label for="name">name:  </label>
             <input type="text" name="name" id="name" />
             <br />
-            <label for="password">password:  </label>
-            <input type="password" name="password" id="password" />
+            <label for="teacherid">teacherid:  </label>
+            <input type="number" name="teacherid" id="teacherid" />
             <br />
-            <input type="submit" value="Create Account" class="btn btn-primary" /> 
+            <input type="submit" value="Create Class" class="btn btn-primary" /> 
         </fieldset>
     </form>
 
-    <?php include "signup_functions.php" ?>
+   <?php include "addclass_functions.php" ?>
     </main>
 </body>
 </html>
