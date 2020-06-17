@@ -39,4 +39,29 @@ if (isset($_POST["name"], $_POST["teacherid"]))
             $conn->close();
            }
    }
+
+function returnstableids($tablename,$displaycol,$selectedid){
+    $list = '';
+    
+    include "dbconnect.php";
+    $query = 'SELECT id,'. $displaycol . ' FROM '. $tablename. ' ORDER BY '. $displaycol.';';
+    $result = $conn->query($query);
+    
+    if (! empty($result)) {
+        foreach ($result as $key => $value) {
+            foreach($value as $k => $v)
+            if ("id" == $k){
+                $list .= '<option';
+                    if ($selectedid == $v){
+                        $list .= ' selected ';
+                        }
+                 $list .= ' value="'.$v.'">';
+                }
+        else {
+        $list .= $v.'</option>'; 
+        }
+        }
+        return $list;
+        }
+} 
 ?>

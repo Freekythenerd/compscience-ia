@@ -11,8 +11,15 @@
 
     <title>addclass</title>
 </head>
+
 <body>
-    <?php include "header.php"; ?>
+    <?php 
+    include "header.php";
+    include "addclass_functions.php";
+    $teachers = '';
+
+    $teachers = returnstableids("teachers","name",NULL);    
+    ?>
 
     <main class="container lead">
     <form action="addclass.php" method="post">
@@ -21,14 +28,20 @@
              <label for="name">name:  </label>
             <input type="text" name="name" id="name" />
             <br />
-            <label for="teacherid">teacherid:  </label>
-            <input type="number" name="teacherid" id="teacherid" />
-            <br />
+            
+             <div class="search-box">
+                <label for="teacherid">select teacher:</label>
+                <select id="id" name="class"> 
+                        <?php
+                            echo $teachers;
+                        ?>
+                </select>
+            
             <input type="submit" value="Create Class" class="btn btn-primary" /> 
         </fieldset>
     </form>
 
-   <?php include "addclass_functions.php" ?>
+
     </main>
 </body>
 </html>

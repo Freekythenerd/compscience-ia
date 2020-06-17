@@ -10,7 +10,7 @@ function deleteclass($id){
 function displayclasstable($id) {
 
 include "dbconnect.php";
-$query = "SELECT * FROM classes ORDER BY name DESC";
+$query = "SELECT c.name as 'class name', t.name as 'teacher name' FROM classes c inner join teachers t on c.teacher_id = t.id ORDER BY c.name";
 //echo $query;
 $data = $conn->query($query);
 
@@ -25,13 +25,7 @@ foreach($data as $key => $var) {
             $output .= '<td>' . $v . '</td>';
         }
     }
-    if ($key === 0) {
-    }
-    else{     
-    $output .= '<td>' . ' <input type="submit" name="update'.$id.'" value="update" class="btn btn-primary" /> ' . '</td>';     
-        
-    $output .= '<td>' . ' <input type="button" onclick="classmaintenancefunctions.asp" name="delete'.$id.'" value="delete" class="btn btn-primary" /> ' . '</td>';
-    }
+   
     $output .= '</tr>';
 }
 $output .= '</table>';

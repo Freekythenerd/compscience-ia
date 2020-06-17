@@ -11,8 +11,12 @@
 
     <title>addstudent</title>
 </head>
+   
+
+    
 <body>
     <?php include "header.php"; ?>
+    <?php include "addstudent_functions.php" ?>
 
     <main class="container lead">
     <form action="addstudent.php" method="post">
@@ -28,7 +32,7 @@
         </fieldset>
     </form>
 
-   <?php include "addstudent_functions.php" ?>
+
     </main>
 </body>
 </html>
