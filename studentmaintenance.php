@@ -67,10 +67,11 @@ $classes = returnstableids("classes","name",$classid);
                         ?>
                 </select>
                 
-                <br> <br>
+                <br>
                 <button id="Filter">Search</button>
+                
             </div>
-            
+            <br><br>
                 <?php
                     displaystudenttable($studentid,$classid);
                 $updatedata = returncurrentgrade($studentid,$classid);

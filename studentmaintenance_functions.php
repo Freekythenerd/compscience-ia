@@ -39,7 +39,7 @@ function returnstableids($tablename,$displaycol,$selectedid){
 function displaystudenttable($studentid, $classid) {
 include "dbconnect.php";
     
-$query = 'select s.id as "student id", s.name as "student", c.id as "class id", c.name as "class", g.grade, t.name as "teacher"
+$query = 'select s.name as "student", c.name as "class", g.grade, t.name as "teacher"
 from students s inner join grades g on s.id = g.student_id 
 inner join classes c on g.class_id = c.id
 inner join teachers t on t.id = c.teacher_id';

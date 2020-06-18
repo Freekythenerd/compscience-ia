@@ -22,7 +22,7 @@
     ?>
 
     <main class="container lead">
-    <form action="addclass.php" method="post">
+    <form action="addclass_functions.php" method="post">
         <fieldset>
             <legend>Add Class</legend>
              <label for="name">name:  </label>
@@ -31,7 +31,7 @@
             
              <div class="search-box">
                 <label for="teacherid">select teacher:</label>
-                <select id="id" name="class"> 
+                <select id="id" name="teacherid"> 
                         <?php
                             echo $teachers;
                         ?>

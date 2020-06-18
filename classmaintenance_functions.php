@@ -15,15 +15,18 @@ $query = "SELECT c.name as 'class name', t.name as 'teacher name' FROM classes c
 $data = $conn->query($query);
 
 $output = '<table class="table .table-bordered">';
-foreach($data as $key => $var) {
+  foreach($data as $key => $var) {
     $output .= '<tr>';
     foreach($var as $k => $v) {
-        if ($key === 0) {
-            $output .= '<td><strong>' . $k . '</strong></td>';
-        } else {
+     if ($key === 0) 
+          $output .= '<td><strong>' . $k . '</strong></td>';
+    }
+    }
+    foreach($data as $key => $var) {
+    $output .= '<tr>';
+    foreach($var as $k => $v) {
             if ("id" == $k) $id = $v;
             $output .= '<td>' . $v . '</td>';
-        }
     }
    
     $output .= '</tr>';

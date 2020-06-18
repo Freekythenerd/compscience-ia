@@ -5,7 +5,8 @@ if (isset($_POST["name"], $_POST["teacherid"]))
     
         function Process_addclass($name,$teacherid) {
             $error = "";
-    
+    echo "here";
+            
             // validate username, name and password
             if ($name == "")
                 $error .= "please enter a name<br />";

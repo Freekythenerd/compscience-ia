@@ -1,6 +1,7 @@
 <?php
 
 $tnames = [
+    "bill",
     "dan",
     "james",
     "jeremy",
@@ -9,13 +10,7 @@ $tnames = [
     "kate",
     "jasmine",
     "erica",
-    "bill",
     "jesse",
-    "natasha",
-    "michaela",
-    "isabella",
-    "gareth",
-    "will"
 ];
 $snames = [
         "Adams",
@@ -28,18 +23,10 @@ $snames = [
         "Hills",
         "Irwin",
         "Jones",
-        "Klein",
-        "Lopez",
-        "Mason",
-        "Nalty",
-        "Ochoa",
-        "Patel",
-        "Quinn",
-        "Reily",
 ];
 
 $usernames = [
-    "elitegamer22",
+    "bill",
     "teacherfriend12",
     "petalsandroses5",
     "rebeccasimmons",
@@ -48,6 +35,11 @@ $usernames = [
     "fuzzyfreud12",
     "franticlion14",
     "natalieS",
-    "pondoD"
+    "PondoD",
 ];
+
+$cnames = [
+    "english",
+    "physics",
+]
 ?>
